@@ -3,161 +3,193 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
-    
+  <title>Achal Amit</title>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'img/image5.jpeg' %}" height="50" width="50"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'img/image5.jpeg' %}" height="50"
+        width="50"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about' %}">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Infrastructure</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Custom Made</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-                
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'infrastructure' %}">Infrastructure</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'custom' %}">Custom Made</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-                <img src="{% static 'img/kalyan.jpeg' %}" height="50" width="50" alt="no-image">
-            </form>
-        </div>
-    </nav>
-    {% block content %}
-    <div class="container-fluid width:100%">
+        <img src="{% static 'img/kalyan.jpeg' %}" height="50" width="50" alt="no-image">
+      </form>
+    </div>
+  </nav>
+  
+  <div class="container-fluid width:100%">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="{% static 'img/imagehome.jpeg' %}" height="450" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item ">
-                <img src="{% static 'img/image6.jpeg' %}" height="450" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="{% static 'img/image14.jpeg' %}" height="450" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="{% static 'img/image7.jpeg' %}" height="450" class="d-block w-100" alt="...">
-            </div>
-            <!--https://source.unsplash.com/1400x400?code,nature-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'img/imagehome.jpeg' %}" height="450" class="d-block w-100" alt="...">
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    </div>
-    
-    <div class="contaniner">
-        <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading" style="margin-left: 25px;margin-top: 50px;">We have a world-class manufacturing setup in Agra, with 100% in-house production.Skilled weavers and artisans use their craft to create a wide and diverse product range and portfolio.
-
-            <span class="text-muted"> &nbsp;It’ll blow your mind.</span></h2>
+        <div class="carousel-item ">
+          <img src="{% static 'img/image6.jpeg' %}" height="450" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/image14.jpeg' %}" height="450" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/image7.jpeg' %}" height="450" class="d-block w-100" alt="...">
+        </div>
+        <!--https://source.unsplash.com/1400x400?code,nature-->
       </div>
-      <div class="col-md-5">
-        <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
-        <img src="{% static 'img/image8.jpg' %}" height="300" width="350" style="margin-left: 40px;" >
-      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading" style="margin-top: 50px;">Our product portfolio is unique since we have expertise in manufacturing both handmade and machine-made rugs and carpets with high quality at globally competitive costs.. <span class="text-muted">See for yourself.</span></h2>
-       
-      </div>
-      <div class="col-md-5 order-md-1">
-        <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
-        <img src="{% static 'img/image11.jpeg' %}" height="300" width="350" style="margin-left: 30px;" >
-      </div>
+  </div>
+  {% block content %}
+  <section class="jumbotron text-center my-4" >
+    <div class="container my-4" style="margin-top: 30px;">
+      <h1 style="font-style: italic;">MANUFACTURERS & EXPORTERS OF RUGS, DURRIES AND CARPETS</h1>
+      <p class="lead text-muted">We offer high quality bespoke custom carpets as per your requirements. We have worked on numerous hospitality, hotel, airport and villa and palace projects, and we collaborate with some of the most famous designers in the world. Our services include measurements, custom fit-outs, wall-to-wall carpeting, bespoke designing and installation services on request.</p>
+      
     </div>
+  </section>
 
-    <hr class="featurette-divider">
+  
+  <div class="container my-4">
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading" style="margin-left: 25px; margin-top: 50px;">We have numerous social compliance and social security certifications, which include Sedex SMETA, OEKO-TEX, AEO, SCAN among others
-            OEXO-TEX	OEXO-TEX	OEXO-TEX	OEXO-TEX
-            . <span class="text-muted">Checkmate.</span></h2>
-        
-      </div>
-      <div class="col-md-5">
-        <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
-        <img src="{% static 'img/image10.png' %}" height="300" width="350" style="margin-left: 40px;" >
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading" style="margin-left: 25px;margin-top: 50px;font-size: 30px;">We have a world-class manufacturing
+        setup in Agra, with 100% in-house production.Skilled weavers and artisans use their craft to create a wide and
+        diverse product range and portfolio.
+
+        <span class="text-muted"> &nbsp;It’ll blow your mind.</span></h2>
     </div>
+    <div class="col-md-5">
+      <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+      <img src="{% static 'img/image8.jpg' %}" height="300" width="350" style="margin-left: 40px;">
     </div>
+  </div>
 
-    <hr class="featurette-divider">
 
-    <!-- /END THE FEATURETTES -->
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading" style="margin-top: 50px;font-size: 30px;">Our product portfolio is unique since we have expertise
+        in manufacturing both handmade and machine-made rugs and carpets with high quality at globally competitive
+        costs.. <span class="text-muted">See for yourself.</span></h2>
+
+    </div>
+    <div class="col-md-5 order-md-1">
+      <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+      <img src="{% static 'img/image11.jpeg' %}" height="300" width="350" style="margin-left: 30px;">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading" style="margin-left: 25px; margin-top: 50px;font-size: 30px;">We have numerous social compliance and
+        social security certifications, which include Sedex SMETA, OEKO-TEX, AEO, SCAN among others
+        OEXO-TEX OEXO-TEX OEXO-TEX OEXO-TEX
+        . <span class="text-muted">Checkmate.</span></h2>
+
+    </div>
+    <div class="col-md-5">
+      <!--<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>-->
+      <img src="{% static 'img/image10.png' %}" height="300" width="350" style="margin-left: 40px;">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
 
   </div><!-- /.container -->
-    </div>
+  </div>
+  </div>
 </div>
-
-    <section class="jumbotron text-center">
-        <div class="container">
-          <h1>Album example</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
-        </div>
-      </section>
-
-{% endblock %}
-<!-- FOOTER -->
-<footer class="container" style="margin-top: 50px;">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2017-2020 Company, Inc.; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  {% endblock %}
+  <!-- FOOTER -->
+  <footer class="pt-4 my-md-5 pt-md-5 border-top ">
+    <div class="row">
+      <div class="col-12 col-md" style="margin-left: 30px;">
+        <h5>Achal Amit and Company
+          Kaysons Exports</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Telephone:&nbsp;&nbsp; +91 9837126504</a></li>
+            <li><a class="text-muted" href="#">FAX:&nbsp;&nbsp;+91 562 2640416</a></li>
+            <li><a class="text-muted" href="#">Email:&nbsp;&nbsp;agra@achalamit.in
+</a></li>
+            
+          </ul>
+        
+        <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+      </div>
+      
+      <div class="col-6 col-md" style="margin-left: -20px; text-align: center;" >
+        <img src="{% static 'img/image5.jpeg' %}" height="230" width="200" alt="">
+      </div>
+      <div class="col-12 col-md" style="margin-left: -0px;">
+        <h5>Address</h5>
+          <p class="list-unstyled text-small">105, Nehru Nagar,
+            Agra - 282002 (India)
+            
+            I-1749, I Block, CR Park,
+            New Delhi - 110019 (India)</p>
+            
+        
+       
+      </div>
+    </div>
   </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

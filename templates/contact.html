@@ -1,0 +1,35 @@
+{% extends 'index.html'%}
+{% load static %}
+{% block content %}
+
+<section class="jumbotron text-center my-4">
+    <div class="container my-4" style="margin-top: 30px;">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Phone</label>
+            <input type="textarea" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Comments</label>
+            <input type="textarea" class="form-control" id="exampleInputPassword1">
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+       
+
+    </div>
+</section>
+
+{% endblock %}

@@ -5,3 +5,9 @@ def index(request):
     return render(request,'index.html')
 def about(request):
     return render(request,'about.html')
+def custom(request):
+    return render(request,'custom.html')
+def infrastructure(request):
+    return render(request,'infrastructure.html')
+def contact(request):
+    return render(request,'contact.html')
