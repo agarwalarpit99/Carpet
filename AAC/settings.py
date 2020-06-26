@@ -25,7 +25,7 @@ SECRET_KEY = 'vq8-x&j8f#id%0!)8y6y_@6q!vbfo(yd1av7-#)+au%)^gd46x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aacarpet20.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['achalamit.herokuapp.com','127.0.0.1']
 
 
 # Application definition
